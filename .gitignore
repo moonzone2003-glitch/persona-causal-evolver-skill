@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Logs and private runtime data
+*.log
+.local/
+**/data/*
+!**/data/
+!**/data/sample-*.json
+
+# Secrets
+.env
+.env.*
+!.env.example

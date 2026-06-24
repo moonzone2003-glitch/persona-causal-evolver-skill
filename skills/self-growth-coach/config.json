@@ -1,0 +1,21 @@
+{
+  "version": "1.1.0",
+  "positioning": "personal_decision_trainer",
+  "default_domains": ["investment", "learning", "product", "management", "execution", "ai_coding"],
+  "score_scale": {
+    "min": 0,
+    "max": 10,
+    "bands": [
+      {"range": "0-3", "label": "失控或未建立模型"},
+      {"range": "4-5", "label": "有意识但不稳定"},
+      {"range": "6-7", "label": "局部稳定，可形成方法"},
+      {"range": "8-9", "label": "稳定高手，可迁移复用"},
+      {"range": "10", "label": "专家级，可训练他人和系统化输出"}
+    ]
+  },
+  "max_training_tasks_per_cycle": 3,
+  "internalization_dimensions": ["理解", "迁移", "决策改善", "执行", "保持"],
+  "profile_candidate_policy": "write_candidate_strategy_only_never_overwrite_real_persona",
+  "evidence_policy": "score_with_evidence_or_mark_low_confidence",
+  "memory_policy": "append_summary_only_no_sensitive_raw_data"
+}

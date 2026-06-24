@@ -1,0 +1,15 @@
+{
+  "domain": "ai_coding",
+  "scores": {
+    "理解": 7,
+    "迁移": 6,
+    "决策改善": 6,
+    "执行": 4,
+    "保持": 2
+  },
+  "evidence_count": 3,
+  "real_world_execution_count": 1,
+  "delayed_review_days": 0,
+  "confidence": "medium",
+  "notes": "示例：模型能给出更稳的故障排查流程，但用户执行和延迟保持证据不足。"
+}

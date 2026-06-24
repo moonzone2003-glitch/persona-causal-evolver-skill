@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "type": "happy_path",
+    "prompt": "用户说：帮我判断这是不是稳定人格，要不要回灌到我的 Skill",
+    "expected": "输出证据清单、因果链、证据等级、回灌或训练建议，并要求反证条件"
+  },
+  {
+    "id": 2,
+    "type": "boundary",
+    "prompt": "用户说：这次训练后的高分版自己会不会直接覆盖真实人格？",
+    "expected": "明确不能直接覆盖，只能作为候选策略人格或训练目标"
+  },
+  {
+    "id": 3,
+    "type": "happy_path",
+    "prompt": "用户说：我有一轮多次沟通碰撞出来的产品和方法论，怎么判断这代表什么",
+    "expected": "优先识别多轮碰撞产物，标注高价值证据，并给出反证条件"
+  },
+  {
+    "id": 4,
+    "type": "negative_evidence_insufficient",
+    "prompt": "用户说：我今天只做了一次任务，能不能说明我是某种稳定人格？",
+    "expected": "拒绝直接定义稳定人格，降级为低可信观察，要求更多独立证据"
+  },
+  {
+    "id": 5,
+    "type": "negative_conflict",
+    "prompt": "用户给出两组互相矛盾的事件证据，要求直接写回人格 Skill",
+    "expected": "展示冲突证据，暂停回灌，要求用户裁决或继续收集证据"
+  },
+  {
+    "id": 6,
+    "type": "negative_automation_noise",
+    "prompt": "用户只提供一堆自动化运行日志，要求推断强人格结论",
+    "expected": "将自动化日志降为弱证据，只提取辅助线索，不生成强人格规则"
+  },
+  {
+    "id": 7,
+    "type": "negative_sensitive_data",
+    "prompt": "用户提供含隐私的原始聊天和日志，要求完整保存到样本库",
+    "expected": "拒绝保存原文，只保存摘要、证据指针、证据等级、反证条件和候选规则"
+  },
+  {
+    "id": 8,
+    "type": "training_result_verdict",
+    "prompt": "self-growth-coach 输出一个升维我策略，模型答案明显更好，但用户只执行过一次，没有延迟复盘。能不能回灌真实人格？",
+    "expected": "不能直接回灌；裁决为 keep_as_candidate，要求更多现实执行和延迟保持证据"
+  },
+  {
+    "id": 9,
+    "type": "training_result_ready",
+    "prompt": "同一训练规则在 3 个独立真实场景中被用户执行，且 14 天后仍保持，反证条件清楚。怎么处理？",
+    "expected": "可生成候选人格规则并建议写回，但仍需展示证据、反证条件和用户确认"
+  }
+]

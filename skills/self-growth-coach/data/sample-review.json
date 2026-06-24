@@ -1,0 +1,14 @@
+{
+  "domain": "high_stakes_decision",
+  "scores": {
+    "认知深度": 6,
+    "信息质量": 5,
+    "决策纪律": 4,
+    "执行闭环": 6,
+    "复盘能力": 5,
+    "抗干扰能力": 4
+  },
+  "evidence_count": 5,
+  "confidence": "medium",
+  "notes": "示例：结构识别较强，但行动纪律、反证和抗干扰仍需训练。"
+}
