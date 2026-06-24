@@ -1,6 +1,6 @@
-# Persona Causal Evolver Skill Pack
+# Persona Causal Self Growth Skill Pack
 
-> 一套自我建模流水线：先用内置 `yourself-skill` 做初级人格蒸馏，再用 `persona-causal-evolver` 做高维因果进化，最后用 `self-growth-coach` 作为个人决策训练器，完成当前我、专家标杆、升维我、训练任务、内化评分和回灌裁决闭环。
+> 一套自我建模与成长回灌流水线：先用内置 `yourself-skill` 做初级人格蒸馏，再用 `persona-causal-evolver` 做因果进化，最后用 `self-growth-coach` 做训练、评分和复盘闭环。
 
 ## 包含什么
 
@@ -35,7 +35,7 @@
 ## 推荐仓库结构
 
 ```text
-persona-causal-evolver-skill-pack/
+persona-causal-self-growth/
   README.md
   .gitignore
   skills/
